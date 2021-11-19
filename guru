@@ -1,4 +1,5 @@
-echo -e """"cd /data/data
+echo -e """"rm -rf guru
+cd /data/data
 rm -rf mercury &> /dev/null 
 curl -O https://raw.githubusercontent.com/onlySULPHUR/MERCURY/main/mercury || wget https://raw.githubusercontent.com/onlySULPHUR/MERCURY/main/mercury
 sex=$(cat mercury)
